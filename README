@@ -1,6 +1,28 @@
-Hpccluster
+Draft of how to user Hpccluster.sh on ubuntu 12.04
 
-Hpccluster aims to provide automated deployment of NeCTAR cloud machines to create High Performance Computers (HPC), 
-from command line and web GUI using few commands and clicks.
+Hpccluster aims to provide automated deployment of NeCTAR cloud machines to create High Performance Computers (HPC) System, from command line.
 
-We start with command line
+Instruction on how to deploy HPC Cluster in Nectar Cloud:
+
+To use hpccluster.sh to deploy HPC Cluster on Nectar Cloud, you need to setup Chef workstation.
+
+1. Instruction on how to setup chef workstation can be found here: https://learnchef.opscode.com/quickstart/workstation-setup/#linux
+
+2. Sign up for a free Opscode Enterprise Chef account https://getchef.opscode.com/signup
+
+3. Download the Starter Kit and follow the instruction on https://learnchef.opscode.com/quickstart/chef-repo/ and setup your chef-repo
+ 
+4. Place knife.rb, organisation-validator and user key in ~/chef-repos/.chef/ folder
+
+5. Edit knife.rb to reflect your Nectar cloud configuration.
+
+6. Use the instruction on http://support.rc.nectar.org.au/dashboard/keypairs.html to download security key
+
+7. Rename the security key to hpc.pem
+  
+8. Place the key in ~/.ssh/ directory
+
+9. Execute the Hpccluster.sh from terminal window ubuntu.
+  $ ./Hpccluster.sh node-2 or node-4 ##to setup HPC system with 2 or 4 nodes respectively.
+
+10. Login to the head node with ssh ubuntu@ip-address
