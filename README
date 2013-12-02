@@ -1,0 +1,6 @@
+Hpccluster
+
+Hpccluster aims to provide automated deployment of NeCTAR cloud machines to create High Performance Computers (HPC), 
+from command line and web GUI using few commands and clicks.
+
+We start with command line
