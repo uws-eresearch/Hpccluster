@@ -1,4 +1,6 @@
-Draft of how to user Hpccluster.sh on ubuntu 12.04
+Draft of how to user Hpccluster.sh on ubuntu 12.04 
+(Please note that this procedure has not been tested yet)
+Procedure which has been tested would be posted later
 
 Hpccluster aims to provide automated deployment of NeCTAR cloud machines to create High Performance Computers (HPC) System, from command line.
 
